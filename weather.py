@@ -2,8 +2,8 @@ import requests
 import sys
 GoogleMapsAPIKey = "AIzaSyCFyytn6hOsL5j-D9vvKibMEq8MZTp9mjc"
 OpenWeatherMapKey = "b00dc69092e7b4e6199a61b16874d897"
-#CityCHK = "haifa"
-CityCHK = input("Which city temperature you want to check? ")
+CityCHK = "haifa"
+#CityCHK = input("Which city temperature you want to check? ")
 RequestGoogleCoords = f"https://maps.googleapis.com/maps/api/geocode/json?&address={CityCHK}&key={GoogleMapsAPIKey}"
 GoogleResp=requests.get(RequestGoogleCoords)
 GoogleJsonResp = GoogleResp.json()
